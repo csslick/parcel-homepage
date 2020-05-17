@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+}
+
+#main_visual {
+  background: #ccc;
+}
+
+#main_visual img {
+  width: 100%;
+}
+#about img {
+  width: 100%;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #abc;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
