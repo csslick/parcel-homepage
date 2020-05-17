@@ -297,8 +297,10 @@ function router(a) {
     default:
       break;
   }
-} // link & router
+} // 콘텐츠 랜더링
 
+
+show_content(); // link Event & router
 
 var link = document.querySelectorAll('#gnb a');
 
@@ -309,10 +311,7 @@ for (var i = 0; i < link.length; i++) {
     console.log(a);
     router(a);
   });
-} // 콘텐츠 랜더링
-
-
-show_content();
+}
 },{"./component/Header":"component/Header.js","./component/Footer":"component/Footer.js","./component/Visual":"component/Visual.js","./component/About":"component/About.js","./styles.css":"styles.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -341,7 +340,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55014" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59300" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -21,7 +21,6 @@ function router(a) {
       document.querySelector('title').innerHTML = 'Home';
       document.querySelector('header h1').innerHTML = 'Home';
       show_content()
-      
       break;
     case "about.html": 
       document.querySelector('title').innerHTML = 'About';
@@ -33,18 +32,18 @@ function router(a) {
   }
 }
 
-// link & router
+// 콘텐츠 랜더링
+show_content();
+
+// link Event & router
 const link = document.querySelectorAll('#gnb a');
 for (let i = 0; i < link.length; i++) {
   link[i].addEventListener('click', function(e){
     e.preventDefault();
     const a = this.getAttribute('href').slice(2);
     console.log(a)
-
     router(a);
   })
 }
 
 
-// 콘텐츠 랜더링
-show_content();
